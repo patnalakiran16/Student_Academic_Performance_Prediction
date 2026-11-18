@@ -1,0 +1,77 @@
+STUDENT PERFORMANCE DATASET
+----------------------------------------
+First Five Records:
+   gender race/ethnicity  ...  reading score  writing score
+0  female        group A  ...           65.0           70.0
+1    male        group C  ...           52.0           61.0
+2  female        group B  ...           87.0           96.0
+3  female        group B  ...           68.0           63.0
+4    male        group D  ...           61.0           77.0
+
+[5 rows x 8 columns]
+
+Dataset Shape:
+(1001, 8)
+
+Dataset Information:
+<class 'pandas.DataFrame'>
+RangeIndex: 1001 entries, 0 to 1000
+Data columns (total 8 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   gender                       1000 non-null   str    
+ 1   race/ethnicity               1000 non-null   str    
+ 2   parental level of education  1000 non-null   str    
+ 3   lunch                        1000 non-null   str    
+ 4   test preparation course      1000 non-null   str    
+ 5   math score                   1000 non-null   float64
+ 6   reading score                1000 non-null   float64
+ 7   writing score                1000 non-null   float64
+dtypes: float64(3), str(5)
+memory usage: 62.7 KB
+None
+
+Missing Values:
+gender                         1
+race/ethnicity                 1
+parental level of education    1
+lunch                          1
+test preparation course        1
+math score                     1
+reading score                  1
+writing score                  1
+dtype: int64
+
+Average Student Marks:
+0    68.666667
+1    63.666667
+2    88.666667
+3    63.333333
+4    67.666667
+Name: average_score, dtype: float64
+
+Training Records: 800
+Testing Records: 200
+
+Student Performance Model Trained Successfully!
+
+Actual Writing Marks:
+[59.0, 64.0, 72.0, 70.0, 85.0, 89.0, 64.0, 39.0, 51.0, 72.0]
+
+Predicted Writing Marks:
+[56.53 70.53 78.11 70.87 87.52 88.66 71.8  41.03 64.59 63.02]
+
+MODEL EVALUATION RESULTS
+----------------------------------------
+Mean Absolute Error: 8.12
+Mean Squared Error: 101.14
+Root Mean Squared Error: 10.06
+R2 Score: 0.5469
+
+NEW STUDENT PERFORMANCE
+----------------------------------------
+Math Marks: 80
+Reading Marks: 85
+Predicted Writing Marks: 79.95
+
+Project Completed Successfully!
